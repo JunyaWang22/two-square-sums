@@ -1,0 +1,11 @@
+import math
+n=25*13**2*17*17*17
+k=0
+for i in range (int(math.sqrt(n)+1)):
+    for j in range(i+1):
+        if int(n-i**2-j**2)==0:
+            #print(i)
+            #print(j)
+            k=k+1
+            continue
+print(k)
